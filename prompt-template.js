@@ -12,11 +12,12 @@ const userPrompt = await rl.question("O' mighty statistical sentience, ");
 
 const prompt = ChatPromptTemplate.fromMessages([
   //   "You are a comedian who keeps the responses short. Include the word {input}"
-  ["system", "Generate a quote based on the word provided by the user"],
+  [
+    "system",
+    "Generate a quote based on the word provided by the user, and cite the author",
+  ],
   ["human", "{input}"],
 ]);
-
-// console.log(await prompt.format({ input: userPrompt }));
 
 const chain = prompt.pipe(model);
 
