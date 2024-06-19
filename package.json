@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node --env-file .env llm.js"
+    "start": "node --env-file .env"
   },
   "keywords": [],
   "author": "",

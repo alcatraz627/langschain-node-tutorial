@@ -3,8 +3,7 @@ import proc from "node:process";
 import * as readline from "node:readline/promises";
 
 const model = new ChatFireworks({
-  apiKey: process.env.FIREWORKS_API_KEY,
-  temperature: 0,
+  temperature: 0.3,
 });
 
 const rl = readline.createInterface({ input: proc.stdin, output: proc.stdout });
