@@ -1,0 +1,20 @@
+{
+  "name": "langchain-node",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --env-file .env llm.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "langchain": "^0.2.5"
+  },
+  "dependencies": {
+    "@langchain/community": "^0.2.12",
+    "@langchain/core": "^0.2.7"
+  }
+}
