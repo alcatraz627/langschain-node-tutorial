@@ -1,5 +1,6 @@
 ## LangChain Node JS tutorial
 Me learning the basics of LLMs using LangChain.
+> Based on the [tutorial series](https://www.youtube.com/watch?v=MaSynwSIty4&list=PL4HikwTaYE0EG379sViZZ6QsFMjJ5Lfwj)
 
 ### Env File
 The following env keys are required
