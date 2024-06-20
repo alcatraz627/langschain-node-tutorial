@@ -10,7 +10,7 @@ import * as readline from "node:readline/promises";
 
 const model = new ChatFireworks({
   // Use this model for list and json
-  // model: "accounts/fireworks/models/mixtral-8x7b-instruct",
+  model: "accounts/fireworks/models/mixtral-8x7b-instruct",
   temperature: 0.7,
 });
 
@@ -56,14 +56,14 @@ const callListOutputParser = async () => {
 
 const callStructuredOutputParser = async () => {
   const prompt = ChatPromptTemplate.fromTemplate(`
-    Extract information from the following phrase.
+    Infer the person's profession from the action
     Formatting Instructions: {format_instr}
     Phrase: {phrase}
   `);
   const outputParser = StructuredOutputParser.fromNamesAndDescriptions({
     name: "Name of the person.",
-    age: "Age of the person. Prefer a number.",
-    profession: "Profession of the person. Infer from action",
+    // age: "Age of the person. Prefer a number.",
+    profession: "Profession of the person.",
   });
 
   const userPrompt = await rl.question("Phrase ");
